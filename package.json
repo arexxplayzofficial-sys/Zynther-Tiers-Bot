@@ -1,0 +1,17 @@
+{
+  "name": "Zynther Tiers-bot",
+  "version": "1.0.0",
+  "description": "Fully automated MCTiers-style testing Discord bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node deploy-commands.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "discord.js": "^14.14.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
