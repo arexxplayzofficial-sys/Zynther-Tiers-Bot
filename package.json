@@ -1,5 +1,5 @@
 {
-  "name": "Zynther Tiers-bot",
+  "name": "zynther-tiers-bot",
   "version": "1.0.0",
   "description": "Fully automated MCTiers-style testing Discord bot",
   "main": "index.js",
