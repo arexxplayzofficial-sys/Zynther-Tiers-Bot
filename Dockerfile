@@ -1,5 +1,8 @@
 FROM node:20-alpine
 
+# Install build dependencies required for native modules (better-sqlite3)
+RUN apk add --no-cache python3 make g++
+
 # Create app directory
 WORKDIR /usr/src/app
 
@@ -8,7 +11,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install only production dependencies
-RUN npm ci --omit=dev
+RUN npm install --omit=dev
 
 # Bundle app source
 COPY . .
